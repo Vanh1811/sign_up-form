@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="overall">
+        <div class="backgroundImg">
+        <img src="/images_used/halie-west-25xggax4bSA-unsplash.jpg">
+            <div class="logo">
+                <img src="/images_used/sign-up.png">
+                <p>ODIN</p>
+            </div>
+            <div class="credit">
+                <p>Photo by <a href="#">Hallie West</a> on <a href="#">Unsplash</a></p>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="text1">
+            <p>This is not a real online service. You know you need something
+                like this in your life to help you realize your deepest dreams.
+                 Sign up <i>now</i> to get started
+            </p>
+            </div>
+            <p>You <i>know</i> you want to
+            </p>
+        </div>
+
+        <div class="main">
+            <p>Let's do this</p>
+
+            <form action="#" method="post">
+                <div class="info">
+                    <label for="first_name">FIRST NAME <span aria-label="required">*</span></label>
+                    <input type="text" id="first_name" name ="firstName" placeholder="Thor" required>
+                </div>
+
+                <div class="info">
+                    <label for="last_name">LAST NAME <span aria-label="required">*</span></label>
+                    <input type="text" id="last_name" name ="lastName" placeholder="Odinson" required>
+                </div>
+
+                <div class="info">
+                    <label for="mail">EMAIL <span aria-label="required">*</span></label>
+                    <input type="email" id="mail" name ="email" placeholder="anhnguyenviet065@gmail.com" required>
+                </div>
+
+                <div class="info">
+                    <label for="phone_num">PHONE NUMBER  <span aria-label="required">*</span></label>
+                    <input type="tel" id="phone_num" name ="Phone Number" placeholder="123456789" required>
+                </div>
+
+                <div class="info">
+                    <label for="pass">Password<span aria-label="required">*</span></label>
+                    <input type="password" class="error" id="pass" name="Password" placeholder="m#P52s@a" required>
+                </div>
+
+                <div id="passwordError" class="error-message">vanh</div>
+
+                <div class="info">
+                    <label for="confirm">CONFIRM PASSWORD <span aria-label="required">*</span></label>
+                    <input type="password" class="error" id="confirm" name="Password confirm" placeholder="m#P52s@a" required>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="footer">
+            <button type="submit" id="yourButtonId">Create account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.overall {
+    display: flex;
+}
+
+.backgroundImg {
+    flex: 1;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img{
+    max-width: 12%;
+    max-height: 12%;
+}
+
+.logo p {
+    font-size: 3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    flex: 2;
+}
+
+.last p{
+    display: flex;
+    align-items: end;
+}
+
+.credit {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+
+.credit a {
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    padding-top: 6%;
+    padding-right: 18%;
+    padding-left: 3%;
+    background-color: rgb(242, 241, 241);
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.header p{
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+}
+
+.text1{
+    margin-bottom: 20px;
+}
+
+.main{
+    padding-left: 3%;
+    padding-top: 0;
+}
+
+.main p{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    width: 50%;
+}
+
+.footer{
+    background-color: rgb(242, 241, 241);
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+button{
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px 30px;
+}
+
+.footer a{
+    color: #596D48;
+}
+
+input:focus{
+    border: 2px solid #3498db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input.error {
+    border-color: #ff0000; /* Red border color for error */
+}
